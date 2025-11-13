@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Arimo", sans-serif;
+}
+
+.navbar {
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    position: sticky;
+    top: 0;
+    border-bottom: 1px solid lightgrey;
+    z-index: 777;
+}
+
+.qucklogo {
+    width: 160px;
+    height: 50px;
+    object-fit: contain;
+}
+
+.searchbar {
+    width: 800px;
+    padding: 6px 10px;
+    border-radius: 4px;
+    border: 1px solid darkgray;
+    color: grey;
+}
+input{
+    outline: none;
+}
+
+.bannerImg {
+    width: 100%;
+    height: 600px;
+    /* background: linear-gradient(to bottom, #2193b0, #6dd5ed); */
+    background:  #2193b0;
+}
+
+.herotext {
+    font-size: 60px;
+    font-weight: 900;
+}
+
+.herotext-span {
+    font-size: 60px;
+    font-weight: 900;
+    color: #F48421;
+    display: inline-block;
+    transition: opacity 0.5s ease-in-out;
+}
+.fade-text {
+  display: inline-block;
+  animation: fade 0.8s ease-in-out;
+}
+@keyframes fade {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.primaryBtn{
+    background-color: #F48421;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    color: white; 
+    font-weight: 900;  
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.SecondaryBtn{
+    background-color: skyblue ;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: 900;
+}
+.primaryBtn:hover{
+     transform: scale(1.0); /* hover te zoom */
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+}
+.SecondaryBtn:hover{
+     transform: scale(1.0); /* hover te zoom */
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+}
+.card {
+  width: 300px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  background:  rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(5px);
+  margin: 20px auto;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+.card-body {
+  padding: 15px;
+  text-align: center;
+}
+.Icon{
+    background-color: #F48421;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 6px;
+    margin: 0 auto;
+}
+.subHeading{
+    color: grey;
+}
+.Price{
+  color: skyblue;    
+}
+.cartBtn {
+  /* background: linear-gradient(135deg, #ff7e5f, #feb47b);*/
+  background:#2193b0;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 18px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  width: 100%;
+  justify-content: center;
+}
+
+.cartBtn:hover {
+  background: #ff6a00;
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.cartBtn:active {
+  transform: scale(0.95);
+}
