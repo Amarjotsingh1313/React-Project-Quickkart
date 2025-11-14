@@ -128,13 +128,17 @@ export default function home() {
             transition: Zoom,
         });
     };
+     
+
+  const addToCart = () => {
+    setCartCount(prev => prev + 1);
+  };
 
 
     return (
         <>
             <div>
-      {/* Pass cart count to header */}
-      {/* <Header cartCount={cartCount} /> */}
+      
             <motion.div
                 className="bannerImg p-5"
                 initial={{ opacity: 0, y: -50 }}
@@ -166,8 +170,6 @@ export default function home() {
                             <button className="SecondaryBtn">Learn More</button>
                         </motion.div>
                     </motion.div>
-
-                    {/* Cards Animation */}
                     <motion.div
                         className="d-flex pt-3"
                         initial="hidden"
@@ -272,7 +274,7 @@ export default function home() {
                                     className="cartBtn"
                                     onClick={() => {
                                         handleAddToCart(product);
-                                        addToCart();
+                                        addToCart();                                                        
                                     }}
                                 >
                                     Add to Cart

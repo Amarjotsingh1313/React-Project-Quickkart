@@ -158,10 +158,52 @@ input{
 }
 .Footer{
   border-top: 1px solid  #ccc;
+  border-bottom: 1px solid #ccc;
 }
 .FooterLogo{
   width: 150px;
   height: 100px;
   object-fit: contain;
+
+}
+.Footer-icons{
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: #F48421;
+  color: white;
+  align-items: center;
+  text-align: center;
+  align-content: center;
+
+}
+.FooterLinks{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.FooterLinks a{
+  color: black;
+  text-decoration: none;
+}
+.EmailInput{
+  border: 1px solid grey;
+  padding: 5px 10px;
+  width: 150px;
+  border-radius: 8px;
+  font-size: 14px;
+  
+}
+.SubscribeBtn{
+   background:#2193b0;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 18px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  justify-content: center;
 
 }

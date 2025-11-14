@@ -2,9 +2,7 @@ import { useState } from "react";
 export const Header = () => {
     const [cartCount, setCartCount] = useState(0);
 
-    const addToCart = () => {
-        setCartCount(cartCount + 1);
-    };
+    
     return (
         <div className="navbar d-flex justify-content-between align-items-center px-3 py-2">
             <div className="logoImg ">
